@@ -18,7 +18,7 @@ function App() {
     setStops([]);
 
     try {
-      const res = await fetch('http://localhost:5000/routecast', {
+      const res = await fetch('https://routecast-server.onrender.com/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ start, destination }),
